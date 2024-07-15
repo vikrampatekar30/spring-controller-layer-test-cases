@@ -1,0 +1,77 @@
+url : localhost:8080/employee/add
+Method : POST
+Body :
+{
+    "empId" : 1,
+    "firstName" : "John",
+    "lastName" : "Miller",
+    "email" : "john.miller@gmail.com",
+    "phoneNo" : 9865412387,
+    "salary" : 2300
+}
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/get/1
+Method : GET
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/getall
+Method : GET
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/update
+Method : PUT
+Body :
+{
+    "empId" : 1,
+    "firstName" : "John",
+    "lastName" : "Miller",
+    "email" : "john.miller@gmail.com",
+    "phoneNo" : 9865412387,
+    "salary" : 2400
+}
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/delete/1
+Method : DELETE
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/addall
+Method : POST
+Body :
+{
+    "employeeDTOList" : [
+        {
+            "empId" : 1,
+            "firstName" : "John",
+            "lastName" : "Miller",
+            "email" : "john.miller@gmail.com",
+            "phoneNo" : 9865412387,
+            "salary" : 2300
+        },
+        {
+            "empId" : 2,
+            "firstName" : "Jim",
+            "lastName" : "David",
+            "email" : "jim.david@gmail.com",
+            "phoneNo" : 9865412345,
+            "salary" : 2200
+        }
+    ]
+}
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/withfallback/get/1
+Method : GET
+
+
+------------------------------------------------------------------
+
+url : localhost:8080/employee/fileupload
+Method : POST
